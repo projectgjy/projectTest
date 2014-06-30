@@ -12,7 +12,7 @@
 	<!-- 激活@Controller模式 -->
 	<mvc:annotation-driven />
 	<!-- 对包中的所有类进行扫描，以完成Bean创建和自动依赖注入的功能 需要更改 -->
-	<context:component-scan base-package="com.web.controller" />
+	<context:component-scan base-package="com.web.*" />
 
 	<bean
 		class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter" />
@@ -20,7 +20,7 @@
 	<bean id="viewResolver"
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 		<property name="prefix">
-			<value>/WEB-INF/pages/jsp/</value>
+			<value>/WEB-INF/pages/</value>
 		</property>
 		<property name="suffix">
 			<value>.jsp</value>
