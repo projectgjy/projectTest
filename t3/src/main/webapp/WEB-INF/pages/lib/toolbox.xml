@@ -1,0 +1,44 @@
+<toolbox>
+	<tool>
+		<key>date</key>
+		<scope>application</scope>
+		<class>org.apache.velocity.tools.generic.DateTool</class>
+		<parameter name="format" value="dd/MM/yyyy" />
+	</tool>
+	
+	<tool>
+		<key>date1</key>
+		<scope>application</scope>
+		<class>org.apache.velocity.tools.generic.DateTool</class>
+		<parameter name="format" value="dd/MM/yyyy hh" />
+	</tool>
+	
+	<tool>
+		<key>date2</key>
+		<scope>application</scope>
+		<class>org.apache.velocity.tools.generic.DateTool</class>
+		<parameter name="format" value="dd/MM/yyyy hh:mm" />
+	</tool>
+	
+	<tool>
+		<key>date3</key>
+		<scope>application</scope>
+		<class>org.apache.velocity.tools.generic.DateTool</class>
+		<parameter name="format" value="dd/MM/yyyy hh:mm:ss" />
+	</tool>
+	<tool>
+  		<key>render</key>
+  		<scope>application</scope>
+  		<class>org.apache.velocity.tools.generic.RenderTool</class>
+	</tool>
+	<tool>
+		<key>cookie</key>
+		<scope>request</scope>
+		<class>org.apache.velocity.tools.view.tools.CookieTool</class>
+	</tool>
+	 <tool>
+        <key>ctx</key>
+        <scope>application</scope>
+        <class>org.apache.velocity.VelocityContext</class>
+    </tool>
+</toolbox> 

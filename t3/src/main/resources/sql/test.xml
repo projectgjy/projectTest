@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.repo.TestDao">
+	
+	<insert id="insertTest" parameterType="Test"> 
+       insert into test(id, name, depart_id, p_id, province, city, district) 
+       values (#test.id, #test.name, #test.departId, #test.pId, #test.province, #test.city, #test.district) 
+       <!-- 这里sql结尾不能加分号，否则报“ORA-00911”的错误 --> 
+    </insert>
+</mapper>
